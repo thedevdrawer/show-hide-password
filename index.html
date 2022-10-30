@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Password</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Show/Hide</h1>
+        <h2>Your Form Passwords</h2>
+        <div class="password-container">
+            <div class="password" id="password1">
+                <input type="password" value="Password 1" placeholder="Enter Your Password 1">
+                <span></span>
+            </div>
+            <div class="password" id="password2">
+                <input type="password" value="" placeholder="Enter Your Password 2">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <script src="/js/Password.js"></script>
+    <script>
+        new Password('#password1')
+        new Password('#password2')
+    </script>
+</body>
+</html>
